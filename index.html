@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lat54 | Geospatial Intelligence</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .mono { font-family: 'JetBrains Mono', monospace; }
+        .hero-gradient {
+            background: linear-gradient(to bottom, rgba(18, 18, 18, 0.5), rgba(18, 18, 18, 1)), 
+                        url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=2072');
+            background-size: cover;
+            background-position: center;
+        }
+
+        @keyframes binary-decode {
+        /* 0% to 50% (First 2s): Stable Wording */
+        0%, 50% { content: "ENQUIRY PIPELINE"; opacity: 1; }
+        
+        /* 50% to 100% (Next 2s): Rapid Binary Cycling */
+        52% { content: "1011101 0011011"; opacity: 1; }
+        56% { content: "0111010 1101101"; opacity: 1; }
+        60% { content: "1101111 0001110"; opacity: 1; }
+        64% { content: "0011011 1011101"; opacity: 1; }
+        68% { content: "1011010 0101101"; opacity: 1; }
+        72% { content: "ENQUIRY 1101101"; opacity: 1; }
+        76% { content: "1011101 PIPELINE"; opacity: 1; }
+        80% { content: "0101110 1101111"; opacity: 1; }
+        84% { content: "1111000 0001111"; opacity: 1; }
+        88% { content: "0101101 1011010"; opacity: 1; }
+        92% { content: "1011101 0011011"; opacity: 1; }
+        100% { content: "ENQUIRY PIPELINE"; opacity: 1; }
+    }
+
+    .decode-text::after {
+        content: "ENQUIRY PIPELINE"; /* Fallback */
+        animation: binary-decode 4s steps(1) infinite;
+    }
+    </style>
+</head>
+<body class="bg-[#121212] text-white antialiased">
+
+    <nav class="fixed w-full z-50 border-b border-white/10 bg-[#121212]/80 backdrop-blur-md">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-xl font-bold tracking-tighter mono">LAT<span class="text-grey-400">54</span></div>
+            <div class="hidden md:flex space-x-8 text-sm font-medium tracking-wide">
+                <a href="#services" class="hover:text-gray-400 transition">SERVICES</a>
+                <a href="#ecosystem" class="hover:text-gray-400 transition">TECH STACK</a>
+                <a href="#use-cases" class="hover:text-gray-400 transition">CASE STUDIES</a>
+                <a href="#contact" class="hover:text-gray-400 transition">CONTACT</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="relative h-screen flex items-center justify-center hero-gradient px-6">
+        <div class="max-w-4xl text-center">
+            <div class="mono text-xs mb-4 tracking-[0.3em] text-gray-400 uppercase">Geospatial Earth Observation | Environmental Monitoring</div>
+            <h1 class="text-5xl md:text-7xl font-bold mb-6 tracking-tight">Intelligence from above. <br><span class="text-gray-500">Decisions on the ground.</span></h1>
+            <p class="text-lg md:text-xl text-gray-400 mb-10 max-w-2xl mx-auto font-light">
+                AI-powered, high-precision geospatial intelligence to monitor environmental change, coastal erosion and land use.
+            </p>
+            <a href="#contact" class="inline-block bg-white text-black px-8 py-3 font-bold text-sm tracking-widest hover:bg-gray-200 transition">
+                REQUEST CONSULTATION
+            </a>
+        </div>
+    </section>
+
+    <section id="services" class="py-24 px-6 border-b border-white/5">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                <div class="space-y-4">
+                    <div class="h-1 w-12 bg-white mb-6"></div>
+                    <h3 class="text-xl font-semibold min-h-[4rem] flex items-start">Environmental Intelligence</h3>
+                    <p class="text-gray-400 leading-relaxed font-light text-sm">Multi-spectral monitoring for environmental assessment, climate resilience and regulatory reporting across land, water, and coastal systems.</p>
+                </div>
+                <div class="space-y-4">
+                    <div class="h-1 w-12 bg-gray-500 mb-6"></div>
+                    <h3 class="text-xl font-semibold min-h-[4rem] flex items-start">Precision Analytics</h3>
+                    <p class="text-gray-400 leading-relaxed font-light text-sm">Establish high-confidence baselines and detect subtle environmental shifts and feature changes using our proprietary engineering and multi-temporal modelling.</p>
+                </div>
+                <div class="space-y-4">
+                    <div class="h-1 w-12 bg-gray-700 mb-6"></div>
+                    <h3 class="text-xl font-semibold min-h-[4rem] flex items-start">Decision Systems</h3>
+                    <p class="text-gray-400 leading-relaxed font-light text-sm">Automated monitoring and alerting systems translating geospatial data into reports, actionable intelligence, and real-time notifications.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="ecosystem" class="py-24 bg-white text-black px-6">
+        
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between">
+            <div class="md:w-1/2 mb-12 md:mb-0">
+                <h2 class="text-3xl font-bold tracking-tighter mono uppercase">Global Infrastructure</h2>
+                <p class="mt-6 text-gray-500 leading-relaxed max-w-md font-light">
+                    Combining global satellite data, scalable cloud infrastructure, and our proprietary geospatial analytics and modelling to deliver high-precision intelligence.
+                </p>
+            </div>
+            
+            <div class="md:w-1/2 grid grid-cols-2 gap-12 text-center md:text-left">
+                <div class="space-y-2 border-l border-black pl-4 py-2">
+                    <p class="text-[10px] tracking-widest text-gray-400 uppercase ">Earth Observation Data</p>
+                    <p class="text-lg font-bold tracking-tight">European Space Agency</p>
+                    <!--<p class="text-xs text-gray-500">Copernicus Sentinel Missions</p>-->
+                </div>
+                <div class="space-y-2 border-l border-black pl-4 py-2">
+                    <p class="text-[10px] tracking-widest text-gray-400 uppercase">Cloud Infrastructure</p>
+                    <p class="text-lg font-bold tracking-tight">Amazon Web Services</p>
+                    <!--<p class="text-xs text-gray-500">Secure, Scalable Computation</p>-->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="use-cases" class="py-24 px-6 bg-[#0a0a0a]">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-2xl font-bold mb-16 mono uppercase tracking-widest border-l-4 border-white pl-4">Selected Operations</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-16">
+                
+                <div class="group flex flex-col">
+                    <div class="aspect-video mb-8 overflow-hidden border border-white/5 bg-[#121212] relative flex-shrink-0">
+                        <div class="w-full h-full flex items-center justify-center text-gray-600 italic text-[10px] p-12 text-center uppercase tracking-widest leading-loose">
+                            [Satellite Feed: Kirk Michael / Shoreline Epoch 2017-2026]
+                        </div>
+                        <div class="absolute top-0 right-0 mono text-[10px] text-gray-500 bg-white/5 px-3 py-1 border-l border-b border-white/10">
+                            L54-OP:01
+                        </div>
+                    </div>
+                    
+                    <div class="flex flex-col flex-grow">
+                        <h3 class="text-xl font-bold uppercase tracking-tight mb-4 text-white">Coastal Erosion Dynamics</h3>
+                        <p class="text-gray-400 text-sm font-light leading-relaxed mb-8 flex-grow">
+                            Applying subpixel edge detection to monitor shoreline recession. This capability delivers automated displacement reports and high-cadence alerting for long-term coastal risk mitigation.
+                        </p>
+                        <div class="border-t border-white/10 pt-4 flex flex-wrap gap-6 mt-auto">
+                            <div class="mono text-[10px] text-gray-500 uppercase">Resolution: <span class="text-white">Subpixel</span></div>
+                            <div class="mono text-[10px] text-gray-500 uppercase">Frequency: <span class="text-white">30-Day Cadence</span></div>
+                            <div class="mono text-[10px] text-gray-500 uppercase">Output: <span class="text-white">Report + Alerting</span></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="group flex flex-col">
+                    <div class="aspect-video mb-8 overflow-hidden border border-white/5 bg-[#121212] relative flex-shrink-0">
+                        <div class="w-full h-full flex items-center justify-center text-gray-600 italic text-[10px] p-12 text-center uppercase tracking-widest leading-loose">
+                            [Spectral View: Automated Field-Level Classification]
+                        </div>
+                        <div class="absolute top-0 right-0 mono text-[10px] text-gray-500 bg-white/5 px-3 py-1 border-l border-b border-white/10">
+                            L54-OP:02
+                        </div>
+                    </div>
+                    
+                    <div class="flex flex-col flex-grow">
+                        <h3 class="text-xl font-bold uppercase tracking-tight mb-4 text-white">Precision Land Management</h3>
+                        <p class="text-gray-400 text-sm font-light leading-relaxed mb-8 flex-grow">
+                            Automated change detection for the agricultural and planning sectors. Establish spectral baselines to monitor parcel-level land-use, saturation, and environmental compliance.
+                        </p>
+                        <div class="border-t border-white/10 pt-4 flex flex-wrap gap-6 mt-auto">
+                            <div class="mono text-[10px] text-gray-500 uppercase">Resolution: <span class="text-white">10 Metres</span></div>
+                            <div class="mono text-[10px] text-gray-500 uppercase">Frequency: <span class="text-white">5-Day Cadence</span></div>
+                            <div class="mono text-[10px] text-gray-500 uppercase">Output: <span class="text-white">Audit + Compliance Map</span></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-20 md:py-32 px-6 border-t border-white/5 bg-[#121212]">
+        <div class="max-w-3xl mx-auto text-center">
+            <div class="mono text-[10px] mb-4 tracking-[0.4em] text-gray-500 uppercase decode-text"></div>
+            <h2 class="text-4xl font-bold mb-8 tracking-tight">Start the conversation.</h2>
+            <p class="text-gray-400 mb-16 font-light leading-relaxed">
+                Latitude 54 provides specialist consultancy for private and public sector environmental projects. 
+                Reach out to discuss custom monitoring capabilities.
+            </p>
+            
+            <form action="https://formspree.io/f/xqegvnlj" method="POST" class="space-y-10 text-left">
+                <div class="group">
+                    <label class="mono text-[10px] text-gray-500 uppercase tracking-widest block mb-2 group-focus-within:text-white transition">Your Email Address</label>
+                    <input type="email" name="email" required placeholder="your@email.com" class="w-full bg-transparent border-b border-gray-700 py-4 outline-none focus:border-white transition mono text-sm">
+                </div>
+                <div class="group">
+                    <label class="mono text-[10px] text-gray-500 uppercase tracking-widest block mb-2 group-focus-within:text-white transition">Problem / Project Brief</label>
+                    <textarea name="message" required placeholder="Describe your project, challenge, or area of interest..." rows="4" class="w-full bg-transparent border-b border-gray-700 py-4 outline-none focus:border-white transition mono text-sm resize-none"></textarea>
+                </div>
+                <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off"/>
+                <button type="submit" class="mt-8 w-full border border-white py-4 font-bold tracking-[0.3em] hover:bg-white hover:text-black transition uppercase text-xs">
+                    SEND
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="py-12 px-6 border-t border-white/5 text-center">
+        <div class="text-xs text-gray-600 mono uppercase tracking-widest">
+            Currently developing and validating advanced geospatial monitoring capabilities.
+        </div>
+        <div class="text-xs text-gray-600 mono uppercase tracking-widest">
+            &copy; 2026 Latitude 54. All Rights Reserved.
+        </div>
+    </footer>
+
+</body>
+</html>
