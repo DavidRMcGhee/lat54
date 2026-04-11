@@ -4,15 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lat54 | Geospatial Intelligence</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://cdn.tailwindcss.com" defer></script>
     <link rel="icon" type="image/png" href="favicon.png">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+              mono: ['JetBrains Mono', 'monospace'],
+            },
+          },
+        },
+      }
+    </script>
     <style>
         body { font-family: 'Inter', sans-serif; }
         .mono { font-family: 'JetBrains Mono', monospace; }
         .hero-gradient {
             background: linear-gradient(to bottom, rgba(18, 18, 18, 0.5), rgba(18, 18, 18, 1)), 
-                        url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=2072');
+                        /*url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=2072');*/
+                        url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=60&w=1200')
             background-size: cover;
             background-position: center;
         }
@@ -60,7 +75,7 @@
     <section class="relative h-screen flex items-center justify-center hero-gradient px-6">
         <div class="max-w-4xl text-center">
             <!--<div class="mono text-xs mb-4 tracking-[0.3em] text-gray-400 uppercase">Geospatial Earth Observation | Environmental Monitoring</div>-->
-            <div class="mono text-xs mb-4 tracking-[0.3em] text-gray-400 uppercase">Environmental Intelligence | Isle of Man</div>
+            <div class="mono text-xs mb-4 tracking-[0.3em] text-gray-400 uppercase">Environmental Intelligence & Coastal Monitoring | HQ: Isle of Man</div>
             <h1 class="text-5xl md:text-7xl font-bold mb-6 tracking-tight">Intelligence from above. <br><span class="text-gray-500">Decisions on the ground.</span></h1>
             <p class="text-lg md:text-xl text-gray-400 mb-10 max-w-2xl mx-auto font-light">
                 <!--AI-powered, high-precision geospatial intelligence to monitor environmental change, coastal erosion and land use.-->
