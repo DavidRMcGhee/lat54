@@ -24,14 +24,15 @@
     <style>
         body { font-family: 'Inter', sans-serif; }
         .mono { font-family: 'JetBrains Mono', monospace; }
+        /*
         .hero-gradient {
             background: linear-gradient(to bottom, rgba(18, 18, 18, 0.5), rgba(18, 18, 18, 1)), 
-                        /*url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=2072');*/
+                        url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=2072');
                         url('bg.jpg');
             background-size: cover;
             background-position: center;
         }
-
+        */
         @keyframes binary-decode {
         /* 0% to 50% (First 2s): Stable Wording */
         0%, 50% { content: "ENQUIRY PIPELINE"; opacity: 1; }
@@ -72,7 +73,23 @@
         </div>
     </nav>
 
-    <section class="relative h-screen flex items-center justify-center hero-gradient px-6">
+
+    <!--<section class="relative h-screen flex items-center justify-center hero-gradient px-6">-->
+    <section class="relative h-screen flex items-center justify-center px-6">
+        <!-- Background image (now LCP-visible) -->
+        <img
+            src="bg.jpg"
+            alt=""
+            role="presentation"
+            class="absolute inset-0 w-full h-full object-cover object-center"
+            loading="eager"
+            fetchpriority="high"
+            decoding="async"
+        />
+    
+        <!-- Gradient overlay -->
+        <div class="absolute inset-0 bg-gradient-to-b from-black/50 to-black"></div>
+        
         <div class="max-w-4xl text-center">
             <!--<div class="mono text-xs mb-4 tracking-[0.3em] text-gray-400 uppercase">Geospatial Earth Observation | Environmental Monitoring</div>-->
             <div class="mono text-xs mb-4 tracking-[0.3em] text-gray-400 uppercase">Environmental Intelligence | Isle of Man</div>
